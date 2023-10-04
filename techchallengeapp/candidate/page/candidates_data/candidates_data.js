@@ -33,7 +33,7 @@ frappe.pages["candidates-data"].on_page_load = function (wrapper) {
       ],
       (values) => {
         frappe.call({
-          method: "techchallengeapp.candidate.API.Edit_Candidate",
+          method: "techchallengeapp.candidate.API.Add_Candidate",
           args: {
             doc: values,
           },
