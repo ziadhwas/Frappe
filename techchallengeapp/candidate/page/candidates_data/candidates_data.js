@@ -6,9 +6,40 @@ frappe.pages["candidates-data"].on_page_load = function (wrapper) {
   });
 
   page.set_title("Canditates Data");
-  let $btn = page.set_primary_action("Create New Cabdidate",()=> )
-
-
-
-  
+  let btn = page.set_primary_action("Create New Cabdidate", () =>
+    frappe.prompt(
+      [
+        {
+          label: "Candidate Name",
+          fieldname: "name",
+          fieldtype: "Data",
+        },
+        {
+          label: "Candidate Email",
+          fieldname: "email",
+          fieldtype: "Data",
+        },
+        {
+          label: "Experience",
+          fieldname: "experience",
+          fieldtype: "Data",
+        },
+        {
+          fieldname: "status",
+          fieldtype: "Select",
+          label: "Status",
+          options: "\nDraft\nShortlisted\nRejected\nHired",
+        },
+      ],
+      (values) => {
+        frappe.msgprint({
+          title: __("Feedback"),
+          indicator: "green",
+          message: __(
+            "Document updated successfully for candidate: " + values.name
+          ),
+        });
+      }
+    )
+  );
 };
