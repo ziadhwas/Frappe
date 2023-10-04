@@ -1,0 +1,24 @@
+{
+ "content": null,
+ "creation": "2023-10-04 14:00:20.416626",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-10-04 14:53:24.319380",
+ "modified_by": "Administrator",
+ "module": "Candidate",
+ "name": "candidates-data",
+ "owner": "Administrator",
+ "page_name": "candidates-data",
+ "restrict_to_domain": "IT",
+ "roles": [
+  {
+   "role": "Administrator"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 1,
+ "title": ""
+}
