@@ -116,9 +116,6 @@ scheduler_events = {
 # "all": [
 # "techchallengeapp.tasks.all"
 # ],
-# "daily": [
-# "techchallengeapp.tasks.daily"
-# ],
 # "hourly": [
 # "techchallengeapp.tasks.hourly"
 # ],
