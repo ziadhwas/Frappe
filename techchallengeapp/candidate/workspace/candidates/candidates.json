@@ -13,7 +13,7 @@
  "is_standard": 1,
  "label": "Candidates",
  "links": [],
- "modified": "2023-10-04 14:00:49.146152",
+ "modified": "2023-10-04 19:53:49.087028",
  "modified_by": "Administrator",
  "module": "Candidate",
  "name": "Candidates",
@@ -32,6 +32,12 @@
    "label": "candidates data",
    "link_to": "candidates-data",
    "type": "Page"
+  },
+  {
+   "doc_view": "Report Builder",
+   "label": "Candidates",
+   "link_to": "cadidates information",
+   "type": "Report"
   }
  ]
 }
