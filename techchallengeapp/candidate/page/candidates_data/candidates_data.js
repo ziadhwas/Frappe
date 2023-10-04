@@ -21,7 +21,7 @@ frappe.pages["candidates-data"].on_page_load = function (wrapper) {
         },
         {
           label: "Experience",
-          fieldname: "experience",
+          fieldname: "experiance",
           fieldtype: "Data",
         },
         {
@@ -32,6 +32,14 @@ frappe.pages["candidates-data"].on_page_load = function (wrapper) {
         },
       ],
       (values) => {
+        frappe.call({
+          method: "techchallengeapp.candidate.API.Edit_Candidate",
+          args: {
+            doc: values,
+          },
+          callback: function (r) {},
+        });
+
         frappe.msgprint({
           title: __("Feedback"),
           indicator: "green",
