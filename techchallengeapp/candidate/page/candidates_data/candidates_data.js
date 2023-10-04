@@ -5,5 +5,10 @@ frappe.pages["candidates-data"].on_page_load = function (wrapper) {
     single_column: true,
   });
 
-  page.set_tite("Canditates Data");
+  page.set_title("Canditates Data");
+  let $btn = page.set_primary_action("Create New Cabdidate",()=> )
+
+
+
+  
 };
